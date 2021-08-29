@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:image" content="./assets/webScreenshot.png">
+    <meta property="og:title" content="D&M website4u">
+    <meta property="og:description" content="להרחיב את העסק שלכם, להביא עוד לקוחות והכרה דרך פלטפורמה שלא הכרתם,אני כאן כדי לחבר אתכם לכל זה :)  ">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&M-Website4u</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="icon" href="./assets/icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+</head>
+<body>
+<div class="header">
+    <img src="./assets/newlogo.png" alt="">
+</div>
+<div class="top">
+    <div class="top-content">
+        <div class="img" data-aos="fade-down">
+            <img src="./assets/webWithManPointingNoShadow.svg">
+        </div>
+        <div class="context" data-aos="fade-up-left">
+            <h2>אתרים גדולים לעסקים קטנים</h2>
+            <p>
+                הגיע הזמן להרחיב את העסק, לא?
+                <br>
+               בואו ונתקע יתד בעולם הדיגיטלי, נגדיל את העסק ואת מה שאנחנו אוהבים
+                <br>
+                <span class="top-text-span">יאללה בואו נטרוף את העולם!</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="quote" data-aos="zoom-in">
+    <span>“אם אתם חושבים שאתם קטנים מדי בשביל לשנות משהו, נסו להירדם כשיש יתוש בחדר“</span>
+</div>
+
+<div class="whatido">
+    <div class="cards-container">
+        <div class="cards">
+            <div class="card" data-aos="fade-left">
+                <h3>בניית אתרים</h3>
+                <p>
+                    אדם שמנסה למכור משהו, חייב
+                    <br>
+                    לסמן וי על האינטרנט
+                    <br>
+                    מעצמאיים, עסקים קטנים וענקיים -
+                    <br>
+                    אתר זה מוצר חובה.
+                </p>
+            </div>
+
+            <div class="card mid-card" data-aos="flip-left">
+                <h3>שיווק באינטרנט</h3>
+                <p>
+                    בעולם שהאינטרנט שולט באנשים -
+                    <br>
+                    פרסום ושיווק הינם מרכיב יסודי להצלחה.
+                    <br>
+                    תזכרו את זה - 
+                    <br>
+                    עסק בלי שיווק זה כמו אוכל בלי צלחת.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up-left">
+                <h3>לוגו/כרטיס ביקור</h3>
+                <p>
+                    רוב האנשים נוטים לזלזל בלוגו, מה רע בטקסט רגיל?
+                    <br>
+                    אז ככה, אנשים לא זוכרים טקסט רגיל - הם זוכרים סגנון, צבע ואופי,
+                    <br>
+                    לוגו נכון יגרום לאנשים להתחבר לעסק שלכם.
+                </p>
+            </div>
+
+        </div>
+        
+        
+        <div class="img" data-aos="fade-right">
+            <img src="./assets/whatido.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="quote" data-aos="zoom-in">
+    <span>“ישנם עסקים שהשתדלו והצליחו ישנם גם עסקים שנפלו אבל מה שלא ניתן למדוד זה את אלה שבכלל לא ניסו“</span>
+</div>
+
+<div class="article right">
+    <div class="img" data-aos="flip-down">
+        <img src="./assets/building_website.svg">
+    </div>
+    <div class="text" data-aos="fade-down">
+        <h2>מה זה אתר?</h2>
+        <p>
+            אתר זה בעצם עוד סניף של העסק שלכם, סניף שנמצא בכיס של כל אדם - בכל העולם,
+            <br>
+            ניתן לבחור בדיוק מי יראה את האתר שלכם, איך הוא יראה, וכמה פעמים הוא יראה,
+            <br>
+            לקבל נתונים וסטטיסטיקות על כל פעולה באתר שלכם, 
+            <br>
+            להבין איך הקהל שלכם עובד, ואיך לשפר.
+            <br>
+            <br>
+            לאתר אין גבולות, הוא יכול לגדול בלי סוף,
+
+            אז קדימה - 
+            <br>
+            אל האין סוף - ומעבר לו!
+        </p>
+    </div>
+</div>
+
+<div class="quote" data-aos="zoom-in">
+    <span>“יש לפחד רק מהפחד עצמו” – תיאודור רווזלט</span>
+</div>
+
+<div class="letstalk">
+    <div class="img" data-aos="zoom-in">
+        <img src="./assets/contact-us.svg" alt="">
+    </div>
+    <div class="form" data-aos="fade-up-left">
+        <h2>צור קשר</h2>
+        <span id="success">הטופס נשלח בהצלחה, ניצור איתך קשר</span>
+        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="מספר טלפון" oninput="checkForm()">
+        <textarea name="msg" id="msg" placeholder="ספרו לי קצת על העסק שלכם ובמה אתם מעוניינים" oninput="checkForm()"></textarea>
+        <button id="contact-us">שלח</button>
+        <span id="error"></span>
+    </div>
+</div>
+
+<div class="quote" data-aos="zoom-in">
+    <span>“הצלחה היא מתכון, אם יש לך את כל הרכיבים, אתה תצליח, מאוד פשוט“</span>
+</div>
+
+<div class="article left">
+    <div class="text" data-aos="fade-down">
+        <h2>קצת עליי</h2>
+        <p>
+            היי! אני ישי, מעצב ומתכנת אתרים,
+            <br>
+            ואני בא לעבוד איתכם לתקופה קצרה, להקשיב לכל הבקשות שלכם
+            <br>
+            וליישם אותם לתוך אתר שיעשה את העבודה שאתם צריכים,
+            <br>
+            לבוא לעסק שלכם לקחת תמונות, לעשות לוגו טוב
+            <br>
+            שיתאים לאופי של העסק, לעצב ולהדפיס כרטיסי ביקור -
+            <br>
+            אל תהססו לשלוח הודעה :)
+        </p>
+        <a class="sendWhatsappMsgLink" href="https://api.whatsapp.com/send?phone=+972546144870" target="blank">
+            <span>שלחו הודעה</span>
+            <img src="./assets/whatsappIcon.png" />
+        </a>
+    </div>
+    <div class="img" data-aos="flip-down">
+        <img src="./assets/profilePic.svg">
+    </div>
+</div>
+
+<div class="footer-top"></div>
+<div class="footer">
+    <div class="copyright">
+        <img src="./assets/dark-logo.png"/>
+        <p>
+            להרחיב את העסק שלכם, להביא עוד לקוחות
+            <br>
+             והכרה דרך פלטפורמה שלא הכרתם,
+            <br>
+             אני כאן כדי לחבר אתכם לכל זה :)
+        <p>
+    </div>
+    <div class="icons">
+        <h2>אפשר לדבר איתי גם כאן</h2>
+
+        <div class="icons-labels">
+            <div class="icon-label">
+                <a class="icon-link" href="mailto:yishay11013@gmail.com" target="blank">
+                    <img src="./assets/mail.svg" alt="">
+                    <span>מייל</span>
+                </a>
+            </div>
+            <div class="icon-label">
+                <a class="icon-link" href="tel:+972546144870" target="blank">
+                    <img src="./assets/phoneCall.svg">
+                    <span>שיחת טלפון</span>
+                </a>
+            </div>
+            <div class="icon-label">
+                <a class="icon-link" href="https://api.whatsapp.com/send?phone=+972546144870" target="blank">
+                    <img src="./assets/whatsapp.svg">
+                    <span>ווצאפ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

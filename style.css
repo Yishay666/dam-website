@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    direction: rtl;
+    font-family: 'trashim', 'sans-serif';
+}
+:root{
+    --lightblue: hsl(243, 100%, 79%);
+    --blue: hsl(242, 100%, 67%);
+    --whiteis: rgba(220, 220, 220);
+}
+@font-face {
+    font-family: 'abraham';
+    src: url('./fonts/Abraham-Regular.woff');
+}
+@font-face {
+    font-family: 'hilel';
+    src: url('./fonts/hilel.woff');
+}
+
+@font-face {
+    font-family: 'trashim';
+    src: url('./fonts/trashim.woff');
+}
+::-webKit-scrollbar{
+    width: 6px;
+    background: var(--lightblue);
+}
+::-webkit-scrollbar-thumb{
+    background: #ececec;
+    transition: .7s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+body{
+    min-height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%;
+    z-index: 666;
+    display: grid;
+    place-items: center;
+    background: white;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header img{
+    width: 200px;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center; 
+}
+.top::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(100deg, var(--blue), var(--lightblue));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+.top-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.top-content div{
+    margin: 0 50px;
+}
+.top-content .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.top-content div img{
+    width: 400px;
+    max-width: 90%;
+}
+.top-content .context{
+    color: white;
+    text-align: center;
+}
+.top-content .context h2{
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'abraham';
+}
+.top-content .context p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    text-align: right;
+}
+.top-content .context button{
+    margin-right: 60%;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: var(--lightblue);
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    transition: ease;
+}
+.top-content .context button:hover{
+    background-color: var(--blue);
+    padding: 10px 32px;
+}
+.quote{
+    width: 80%;
+    text-align: center;
+    margin: 65px 10%;
+    color: rgba(99, 99, 99, 0.733);
+}
+.quote span{
+    font-family: 'trashim';
+    font-size: 10px;
+}
+.whatido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+.whatido .headline h2{
+    font-family: 'abraham';
+}
+.whatido .cards-container{
+    max-width: 95%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.whatido .cards-container .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    width: 400px;
+}
+.whatido .cards-container .img img{
+    max-width: 90%;
+    width: 600px;
+}
+.whatido .cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.whatido .cards .card{
+    text-align: center;
+    margin: 0 25px;
+    margin-top: -20px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-right: 3px solid var(--lightblue);
+}
+.whatido .cards .card.mid-card{
+    margin-right: -50px;
+}
+.whatido .cards .card h3{
+    font-size: 16px;
+    font-family: 'abraham';
+    font-weight: bold;
+    margin-top: 7.5px;
+}
+.whatido .cards .card p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.whatido .cards .card img{
+    margin-top: 15px;
+    max-width: 80%;
+    width: 100px;
+}
+.article{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.article .img{
+    width: 400px;
+    max-width: 80%;
+    z-index: -1;
+}
+.article.left .img{
+    margin-right: -100px;
+}
+.article.right .img{
+    margin-left: -100px;
+}
+.article .img img{
+    width: 100%;
+    margin: 0 0 ;
+}
+.article .text{
+    width: 400px;
+    max-width: 80%;
+    margin: 25px 25px;
+    text-align: center;
+}
+.article .text h2{
+    font-family: 'abraham';
+}
+.article .text p{
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 27.5px;
+    font-family: 'trashim';
+}
+.article .text .sendWhatsappMsgLink{
+    font-size: 14px;
+    color: #6C63FF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.article .text .sendWhatsappMsgLink span{
+    line-height: 30px;
+}
+.article .text .sendWhatsappMsgLink img{
+    width: 30px;
+    margin-right: 10px;
+}
+.arrow-right{
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.letstalk{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin-right: 2.5%;
+}
+.letstalk .img{
+    display: grid;
+    place-items: center;
+}
+.letstalk .img img{
+    width: 400px;
+    max-width: 90%;
+}
+.letstalk .form{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.letstalk .form h2{
+    font-family: 'abraham';
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.letstalk .form input, .letstalk .form textarea, .letstalk .form button{
+    margin: 5px 0;
+    width: 250px;
+    padding: 10px;
+    max-width: 90%;
+    border-radius: 20px;
+    border: none;
+    background: rgb(250, 250, 250);
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.06) 4px 2px 4px 0px inset;
+}
+.letstalk .form input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+.letstalk .form textarea{
+    min-height: 100px;
+    resize: none;
+}
+.letstalk .form button{
+    border: 3px solid var(--blue);
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.letstalk .form button:hover{
+    background: #fff;
+    color: var(--blue);
+}
+.letstalk .form #success{
+    display: none;
+    font-size: 10px;
+    background: var(--blue);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.letstalk .form #error{
+    font-size: 10px;
+    color: red;
+}
+.footer-top{
+    margin-top: 100px;
+    clip-path: polygon(43% 15%, 69% 0, 80% 13%, 90% 24%, 100% 2%, 100% 100%, 0 100%, 0 0, 18% 15%, 27% 0);
+    background: var(--blue);
+    height: 50px;
+}
+.footer{
+    margin-top: -2px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.footer > div{
+    width: 400px;
+    max-width: 90%;
+    margin: 20px 30px;
+}
+.footer div.copyright{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.footer .copyright img{
+    width: 250px;
+    margin-right: 0;
+}
+.footer .copyright p{
+    color: var(--whiteis);
+    font-size: 12px;
+    margin-top: 15px;
+}
+.footer .icons{
+    display: grid;
+    place-items: ce;
+}
+.footer .icons h2{
+    color: var(--whiteis);
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.footer .icons .icons-labels{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.footer .icons .icons-labels .icon-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.icon-link, .icon-link:focus, .icon-link:active, .icon-link:visited{
+    all: inherit;
+    color: black;
+    cursor: pointer;
+}
+.footer .icons .icons-labels .icon-label span{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.footer .icons img{
+    height: 25px;
+    margin: 0 5px;
+}

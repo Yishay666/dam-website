@@ -1,0 +1,50 @@
+@media (max-width: 1030px) {
+    .top{
+        height: 80vh;
+    }
+    .top-content .context h2{
+        font-size: 28px;
+    }
+    .top-content .context p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .top-content{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .top-content .context button{
+        margin-right: 0;
+    }
+    .top-content div{
+        margin: 0 10px;
+    }
+    .whatido .cards .card{
+        width: 200px;
+    }
+    .whatido .cards .card.mid-card{
+        margin-right: 25px;
+        width: 250px;
+        background: white;
+        z-index: 6;
+    }
+    .article.left{
+        flex-direction: column-reverse;
+    }
+    .article.right{
+        flex-direction: column;
+    }
+    
+    .article.left .img, .article.right .img{
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: -20px;
+        z-index: -1;
+    }
+    .article .text p{
+        margin-top: 10px;
+    }
+    .footer .copyright p{
+        text-align: center;
+    }
+}
